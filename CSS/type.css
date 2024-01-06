@@ -1,0 +1,81 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../image/img1.jpg');
+}
+
+p {
+  margin-bottom: 50px;
+}
+
+#option-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+#option-container > label {
+    /*background-color: white;*/
+    background-image: url('../image/img4.jpg');
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+    height: fit-content;
+    width: 20%;
+    cursor: pointer;
+}
+#option-container > label {
+    text-decoration: none;
+    color: black;
+}
+
+#option-container > label:nth-of-type(even) :hover {
+ color: goldenrod;
+ text-decoration: underline;
+}
+
+#option-container > label:nth-of-type(odd) :hover {
+  color: greenyellow;
+  text-decoration: underline;
+ }
+
+
+
+.wd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.wd button {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  background-color: black;
+  color: white;
+  font-size: 35px;
+  animation: glowing 1500ms infinite;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: orange;
+  }
+}
