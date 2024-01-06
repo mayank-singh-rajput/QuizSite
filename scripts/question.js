@@ -81,7 +81,7 @@ const submitAnswer = () => {
     let query = new URLSearchParams();
     query.append("score", score);
     query.append("username", getParameter("username"));
-    let url = "https://mayank-singh-rajput.github.io/HTML/score.html?" + query.toString();
+    let url = "https://mayank-singh-rajput.github.io/QuizSite/html/score.html?" + query.toString();
 
     window.location.assign(url);
   }
